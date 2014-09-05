@@ -36,7 +36,7 @@
   controller.style.left = "0";
   controller.style.lineHeight = "42px";
   controller.style.minWidth = "0";
-  fwClear = document.getElementById('blockItBox');
+  fwClear = document.getElementById('fw-clear');
   fwClear.style.padding = "0 1em 0 2em";
   fwClear.style.fontSize = "16px";
   fwClear.style.color = "#fff";
