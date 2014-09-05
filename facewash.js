@@ -49,4 +49,7 @@
   document.getElementById('fw-clear').addEventListener('click', function() {
     clearFiltered(filteredArray);
   });
+  window.addEventListener('scroll', function() {
+    blockIt(terms);
+  });
 })()
