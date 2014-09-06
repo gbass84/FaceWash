@@ -7,7 +7,6 @@
       fwClear,
       washStyle = document.createElement('style');
 
-//initialize our style block for later
 washStyle.type = 'text/css';
 washStyle.setAttribute('id','washStyle');
 document.head.appendChild(washStyle);
@@ -28,10 +27,8 @@ washStyle = document.getElementById('washStyle');
       this.post = posts[i];
       for (var j = 0, y = terms.length; j < y; ++j) {
       	if (this.post.textContent.search(terms[j]) > -1) {
-      	  console.log(terms[j]);
       	  container = (findAncestor(this.post, 'timelineUnitContainer') || findAncestor(this.post, 'userContentWrapper')).parentElement;
       	  this.cursor = container.getAttribute('data-cursor');
-      	  console.log(this.cursor);
       	  washStyle.innerHTML += 'div[data-cursor="'+this.cursor+'"] { opacity: .15; height: 5em; }';
           filteredArray.push(container);
       	}
